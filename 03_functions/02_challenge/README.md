@@ -1,22 +1,22 @@
-# チャレンジ2
+# Challenge 2
 
-このチャレンジではDartの高階関数とネスト関数を使用して、シンプルな計算機を作成します。関数 `calculator` が事前に定義されており、この関数は1つの引数を取ります。この引数は実行する算術演算を表します。`calculator` は計算を処理するために2つのnum型の引数を取る無名関数を返します。
+In this challenge, your task is to create a simple calculator that depends on the concept of Higher-order and nested functions in Dart. There is a pre-defined `calculator` function that takes in one parameter. This parameter represents the mathematical operation to perform. `calculator` returns an anonymous function that takes two parameters, the numbers, to process the calculation.
 
-使用できる引数は次のとおりです。
+Allowed parameters are:
 
-- +: 加算 
-- -: 減算 
-- *: 乗算 
-- /: 除算 
-- ~/: 整数除算 (切り捨て除算) 
-- %: 剰余算
+- +: For addition. 
+- -: For subtraction. 
+- *: For multiplication. 
+- /: For fractional division. 
+- ~/: For integer division. 
+- %: For modulus.
 
-次のエッジケースに対処してください。
+Edge cases to handle:
 
-認められていない演算子が引数として指定された場合、関数で「Unknown operator.」(不明な演算子) といったエラーメッセージを返します。
-除算または整数除算の割る数が0の場合、関数で「Can't divide by zero!」(0では除算できません) といったエラーメッセージを返します。
+If an unrecognized operator is provided as a parameter, the function should return an error message, such as "Unknown operator."
+If the denominator of the fractional or integer division equals zero, the function should return an error message, such as "Can't divide by zero!".
 
-想定される関数の例は次のとおりです。
+Examples of the expected functionality:
 
 ```dart
 calculator("+")(10, 30); // 40
