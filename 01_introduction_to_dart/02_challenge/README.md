@@ -1,14 +1,14 @@
-# Challenge 2
+# チャレンジ2
 
-In this challenge, you'll create a Dart program that analyzes and processes two given paragraphs and prints some statistics related to them.
+このチャレンジでは与えられた2つの文章を分析して処理し、それらに関連する統計を出力するDartプログラムを作成します。
 
-Your tasks are as follows:
+次のタスクを行ってください。
 
-- Save the length of each paragraph in a variable.
-- Save the lowercase variant of each paragraph in a variable.
-- Save a substring of your choice from each paragraph in a variable.
-- Replace all wrong words that are enclosed within square brackets in each paragraph `[]` with words of your choice.
-- Compare the lengths of both paragraphs and print something like "Paragraph 1 is longer as it has `X` characters more than paragraph 2" where `X` is the difference in length.
-- Print a message that reads "The length of paragraph 1 is: `X`" where `X` is the length of the paragraph. Do the same for paragraph 2.
-- Print the lowercase variant of both paragraphs after you've replaced all the wrong words within each.
-- Print the average number of characters in both paragraphs. Make sure to truncate any decimals.
+- 各文章の長さを変数に保存します。
+- 各文章を小文字にしたものを変数に保存します。
+- 各文章に含まれる好きな部分文字列を変数に保存します。
+- 各文章内の角括弧 (`[]`) で囲まれている間違ったスペルのすべての単語を、好きな単語に置き換えます。
+- 両方の文章の長さを比較して、「Paragraph 1 is longer as it has `X` characters more than paragraph 2」(文章1は文章2より `X` 文字長い) といったメッセージを出力します (`X`は長さの差)。
+- 「The length of paragraph 1 is: `X`」(文章1の長さ: `X`) というメッセージを出力します (`X` は文章の長さ)。文章2についても同様のメッセージを出力します。
+- 各文章内の間違ったスペルの単語をすべて置き換えた後、両方の文章を小文字にしたものを出力します。
+- 2つの文章の平均文字数を出力します。小数点以下は切り捨ててください。

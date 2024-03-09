@@ -1,11 +1,11 @@
-# Challenge 1
+# チャレンジ1
 
-In this challenge, you're given a Dart file `convert.dart` with two pre-defined variables, `walkman` and `toothpaste`. A pre-defined function, `convert`, takes a list of maps as a parameter and returns a list of lists.
+このチャレンジではDartファイル `convert.dart` が用意されており、ファイル内には2つの変数 `walkman` と `toothpaste` が事前に定義されています。また、関数 `convert` も事前に定義されており、MapのListを引数として受け取り、ListのListを返します。
 
-The main task here is to update the `convert` function to return a list that contains inner lists. Each internal list should include the values associated with each map.
+ここでの主なタスクは、Listを内部に含んだListを返すように `convert` 関数を更新することです。内部の各Listには各Mapに関連する値を含める必要があります。
 
-An example of the expected functionality:
+想定される関数の例:
 
 ```dart
-convert([map1, map2]); // [[all values of map1], [all values of map2]]
+convert([map1, map2]); // [[map1のすべての値], [map2のすべての値]]
 ```
