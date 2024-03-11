@@ -1,23 +1,23 @@
-# Challenge 1
+# チャレンジ1
 
-In this challenge, you're given a code file `cart.dart` that has a set of variables, each with pre-defined values. Each variable stores the price of an item in a grocery shop, as follows:
+このチャレンジにはコードファイル `cart.dart` が用意されています。このファイルには一連の変数があり、それぞれの値があらかじめ設定されています。各変数には、食料品店の商品の価格が次のように保存されています。
 
-The apples and bananas prices are stored as integers. The values they hold are represented in cents (1 dollar = 100 cents).
+リンゴとバナナの価格はint型で保存されており、値はセント (1ドル＝100セント) 単位で表されています。
 ```dart
   int apples = 250;
   int bananas = 152;
 ```
-The parmesan cheese, chicken breasts, and milk are stored as strings. Parmesan cheese price is represented in cents while the other two are represented in dollars (notice the decimal).
+パルメザンチーズ、鶏むね肉、牛乳はString型で保存されています。パルメザンチーズの価格はセント単位で表され、他の2つはドル単位で表されています (小数点以下に注意してください)。
 ```dart
   dynamic parmesanCheese = "1999";
   dynamic chickenBreasts = "15.99";
   dynamic milk = "1.99";
 ```
 
-Your tasks are as follows:
-- Convert each string that has a dot `"."` to a double using the appropriate `parse` method you learned in unit 1.
-- Convert each string that doesn't have a dot `"."`  to an integer using the appropriate `parse` method you learned in unit 1.
-- Calculate the total price of all items in cents. This means that you'll need to multiply any price that is represented in dollars by 100.
-- Add 10 percent tax to the total price you calculated in the previous step.
-- Convert the total after-tax price from cents to a dollar amount of the type `double` that is rounded to the nearest cent.
-- Print a statement that reads "The total after-tax price of all the items you have is: $`X`" where `X` is the total price after tax.
+次のタスクを行ってください。
+- ユニット1で学んだ適切な `parse` メソッドを使用して、小数点 `"."` を含む各文字列をdouble型に変換します。
+- ドット `"."` を含まない各文字列を、ユニット1で学んだ適切な `parse` メソッドを使用してint型に変換します。
+- すべての商品の合計価格を計算します (セント単位)。つまり、ドル単位で表されている価格には100を掛ける必要があります。
+- 前の手順で計算した合計価格に10%の税金を加算します。
+- 税込合計価格をセント単位からドル単位 (`double` 型) に変換し、セント単位で表したときと最も近い値に丸めます。
+- 「The total after-tax price of all the items you have is: $`X`」(すべての商品の税込合計価格: $`X`) という文を出力します (`X` は税込合計価格)。
